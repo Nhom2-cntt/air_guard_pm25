@@ -11,11 +11,11 @@ pm.execute_notebook(
         DATA_PATH="data/raw/online_retail.csv",
         COUNTRY="United Kingdom",
         OUTPUT_DIR="data/processed",
-        PLOT_REVENUE=False,         # tắt bớt plot khi chạy batch
-        PLOT_TIME_PATTERNS=False,
-        PLOT_PRODUCTS=False,
-        PLOT_CUSTOMERS=False,
-        PLOT_RFM=False,
+        PLOT_REVENUE=True,         # tắt bớt plot khi chạy batch
+        PLOT_TIME_PATTERNS=True,
+        PLOT_PRODUCTS=True,
+        PLOT_CUSTOMERS=True,
+        PLOT_RFM=True,
     ),
     kernel_name="python3",
 )
@@ -63,12 +63,12 @@ pm.execute_notebook(
         TOP_N_RULES=20,
 
         # Tắt plot khi chạy batch (bật = True nếu muốn xem hình)
-        PLOT_TOP_LIFT=False,
-        PLOT_TOP_CONF=False,
-        PLOT_SCATTER=False,
-        PLOT_NETWORK=False,
-        PLOT_PLOTLY_NETWORK=False,
-        PLOT_PLOTLY_SCATTER=False,  
+        PLOT_TOP_LIFT=True,
+        PLOT_TOP_CONF=True,
+        PLOT_SCATTER=True,
+        PLOT_NETWORK=True,
+        PLOT_PLOTLY_NETWORK=True,
+        PLOT_PLOTLY_SCATTER=True,  
     ),
     kernel_name="python3",
 )
