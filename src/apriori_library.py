@@ -105,8 +105,8 @@ class DataCleaner:
             (self.df_uk["Quantity"] > 0) & (self.df_uk["UnitPrice"] > 0)
         ]
 
-        # Bỏ description NA
-        self.df_uk = self.df_uk.dropna(subset=["Description"])
+        # Bỏ NA, value
+        self.df_uk = self.df_uk.dropna(subset=["Description", "CustomerID"])
 
         return self.df_uk
 
